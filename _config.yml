@@ -62,13 +62,13 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "LinkedIn"
-      icon: "fa-linkedin"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/erdem-kece/"
 
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fa-linkedin"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/erdem-kece/"
 
 
