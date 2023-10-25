@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: ekece
 minimal_mistakes_skin: default
 search: true
-
+minimal_mistakes_skin: neon
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
