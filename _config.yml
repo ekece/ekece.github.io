@@ -18,9 +18,8 @@ email: erdemkece@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   All About Linux|Kubernetes|OpenShift
 github_username: ekece
-minimal_mistakes_skin: default
 search: true
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: dark
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
