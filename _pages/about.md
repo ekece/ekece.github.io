@@ -3,6 +3,8 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Welcome to my blog ! I'm Erdem Kece, a linux enthusiast who mainly focuses on Kubernetes especially OpenShift.
+My fascination with technology and its ever-evolving nature has driven me to constantly learn and adapt in ten years of my carrier.
+My mission with this blog is to create a resourceful and informative platform for fellow IT professionals, enthusiasts, and anyone curious about Red Hat OpenShift.
+Please note that this blog is a personal endeavor. As such, the content here is solely my own and does not reflect the services or opinions of my employer.
+Feel free to reach out me.
