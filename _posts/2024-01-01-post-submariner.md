@@ -53,13 +53,13 @@ My lab setup network configuration is below. Since pod and service network overl
 | ocp5          | 10.128.0.0/14 | 172.30.0.0/16   |
 
 You can find out what networks are in use for your cluster.
-```
+```yaml
 $ oc get network cluster -o yaml
 ```
 
 The below configuration install submariner add-on on cluster named ocp5 and local-cluster.  
 
-```
+```yaml
 apiVersion: addon.open-cluster-management.io/v1alpha1
 kind: ManagedClusterAddOn
 metadata:
@@ -119,7 +119,7 @@ spec:
 
 When you apply this configuration on hub cluster, It will create a subscription for Submariner operator on target clusters which will install all necessary components for submariner.
 
-```
+```yaml
 $ oc get pods -n submariner-operator
 NAME                                             READY   STATUS    RESTARTS   AGE
 submariner-addon-5845d6d894-9nm96                1/1     Running   0          98s
@@ -142,7 +142,7 @@ submariner-routeagent-vl7wz                      1/1     Running   0          43
 When you install submariner add-on for the managed cluster, the core-dns configuration also changes to provide service discovery between clusters. Please note the configuration below, which states Lighthouse dns service for queries  clusterset.local domain.
 
 
-```
+```yaml
 $ oc get cm dns-default -o yaml -n openshift-dns
 apiVersion: v1
 data:
@@ -198,7 +198,7 @@ metadata:
 
 Lighthouse dns service in submariner namespace.
 
-```
+```yaml
 $ oc get svc -n submariner-operator | grep submariner-lighthouse-coredns
 submariner-lighthouse-coredns           ClusterIP   172.30.74.59     <none>        53/UDP     5m48s
 submariner-lighthouse-coredns-metrics   ClusterIP   172.30.169.141   <none>        9153/TCP   5m48s
@@ -211,7 +211,7 @@ After a successful deployment you should see green ticks on ACM GUI , you can no
 
 
 Let's create an nginx app in one of OpenShift clusters. 
-```
+```yaml
 $ oc new-project subm
 $ oc new-app --name=nginx-sample nginx:1.20-ubi7~https://github.com/sclorg/nginx-ex.git
 $ subctl export service --namespace subm nginx-sample #create serviceexport object.
@@ -222,7 +222,7 @@ $ oc get serviceexport nginx-sample  -o yaml # you should see serviceexport obje
 From other cluster try to reach serviceexport url.
 Where url schema is: <service>.<namespace>.svc.clusterset.local
 
-```
+```yaml
 $ oc exec nginx-sample-545b9db55c-x726j --  curl nginx-sample.subm.svc.clusterset.local:8080
 ```
 
