@@ -220,7 +220,7 @@ $ oc get serviceexport nginx-sample  -o yaml # you should see serviceexport obje
 
 
 From other cluster try to reach serviceexport url.
-Where url schema is: <service>.<namespace>.svc.clusterset.local
+Where url schema is: "<service>.<namespace>.svc.clusterset.local"
 
 ```yaml
 $ oc exec nginx-sample-545b9db55c-x726j --  curl nginx-sample.subm.svc.clusterset.local:8080
