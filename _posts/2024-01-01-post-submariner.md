@@ -7,8 +7,6 @@ tags:
   - ACM
   - Submariner
   - Network
-layout: single
-classes: wide
 ---
 
 When it comes to multi cluster networking in Kubernetes there are some alternatives out there.
