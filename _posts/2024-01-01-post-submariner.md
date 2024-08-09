@@ -235,4 +235,4 @@ If you need further information you can reach ACM - Network documentation and Su
 
 [https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.9/html/networking/index](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.9/html/networking/index)
 
-[https://submariner.io/](https://submariner.io/)
+[https://submariner.io/](https://submariner.io/).
